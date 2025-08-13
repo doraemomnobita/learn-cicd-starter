@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"strings"
 	"testing"
-	
 )
 
 var ErrNoAuthHeaderIncluded = errors.New("no authorization header included")
@@ -24,12 +23,7 @@ func GetAPIKey(headers http.Header) (string, error) {
 	return splitAuth[1], nil
 }
 
-
-
 // Testing GetAPIKey function
-
-
-
 
 func TestGetAPIKey(t *testing.T) {
 	tests := []struct {
